@@ -134,7 +134,7 @@ export class Posts extends React.PureComponent<PostsProps, PostsState> {
   render() {
     return (
       <div>
-        <Header as="h1">Posts</Header>
+        <Header as="h1">Tweets</Header>
 
         {this.renderCreatePostInput()}
 
