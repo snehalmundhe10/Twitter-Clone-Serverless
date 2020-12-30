@@ -1,22 +1,22 @@
-# Serverless TODO
+# Twitter Clone with Serverless Framework
 
-## Functionality of the application
+## Overview
 
-This application will allow creating/removing/updating/fetching TODO items. Each TODO item can optionally have an attachment image. Each user only has access to TODO items that he/she has created.
+Twitter Clone developed using Serverless Framework. This application shows trending Twitter Topics. This application allows to create tweets with word limit 280 characters. Each tweet can optionally allows an attachment image. Each user only has access to their Twitter accounts that he/she has created.
 
 # Functions implemented
 
 * `Auth` - Implement a custom authorizer for API Gateway that is added to all other functions.
 
-* `GetTodos` - Return all TODOs for a current user. A user id is extracted from a JWT token that is sent by the frontend
+* `Get Tweets` - Return all Tweets for a current user. A user id is extracted from a JWT token that is sent by the frontend
 
-* `CreateTodo` - Create a new TODO for a current user. 
+* `Create Tweets` - Create a new Tweet for a current user. 
 
-* `UpdateTodo` - Update a TODO item created by a current user. A shape of data send by a client application to this function can be found in the `UpdateTodoRequest.ts` file
+* `Update Tweets` - Update a Tweet created by a current user. 
 
-* `DeleteTodo` - Delete a TODO item created by a current user. Expects an id of a TODO item to remove.
+* `Delete Tweets` - Delete a Tweet created by a current user. Expects an id of a Tweet to remove.
 
-* `GenerateUploadUrl` - Return a pre-signed URL that can be used to upload an attachment file for a TODO item.
+* `Generate Upload Url` - Return a pre-signed URL that can be used to upload an attachment file for a Tweet.
 
 
 # How to run the application
@@ -45,25 +45,24 @@ This should start a development server with the React application that will inte
 
 # Screenshots of the application
 
-![Alt text](https://github.com/snehalmundhe10/todo/blob/main/screenshots/serverless%20app-1.png)
+![Alt text]( )
+![Alt text]( )
 
-![Alt text](https://github.com/snehalmundhe10/todo/blob/main/screenshots/serverless%20app-2.png)
+![Alt text]( )
 
-![Alt text](https://github.com/snehalmundhe10/todo/blob/main/screenshots/authToken%201.png)
+![Alt text]( )
 
-![Alt text](https://github.com/snehalmundhe10/todo/blob/main/screenshots/authtoken.png)
+![Alt text]( )
 
-![Alt text](https://github.com/snehalmundhe10/todo/blob/main/screenshots/createTodos.png)
+![Alt text]( )
 
-![Alt text](https://github.com/snehalmundhe10/todo/blob/main/screenshots/getTodos.png)
+![Alt text]( )
 
-![Alt text](https://github.com/snehalmundhe10/todo/blob/main/screenshots/updateTodos.png)
+![Alt text]( )
 
-![Alt text](https://github.com/snehalmundhe10/todo/blob/main/screenshots/item%20deleted.png)
+![Alt text]( )
 
-![Alt text](https://github.com/snehalmundhe10/todo/blob/main/screenshots/getuploadurl.png)
-
-![Alt text](https://github.com/snehalmundhe10/todo/blob/main/screenshots/file%20upload.png)
+![Alt text]( )
 
 ## Author
 Snehal Mundhe
