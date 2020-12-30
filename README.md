@@ -45,24 +45,19 @@ This should start a development server with the React application that will inte
 
 # Screenshots of the application
 
-![Alt text]( )
-![Alt text]( )
+![Alt text](https://github.com/snehalmundhe10/serverless-capstone/blob/main/screenshots/1.%20home.png)
 
-![Alt text]( )
+![Alt text](https://github.com/snehalmundhe10/serverless-capstone/blob/main/screenshots/2.%20Auth0.png)
 
-![Alt text]( )
+![Alt text](https://github.com/snehalmundhe10/serverless-capstone/blob/main/screenshots/3.%20Auth0%20login.png)
 
-![Alt text]( )
+![Alt text](https://github.com/snehalmundhe10/serverless-capstone/blob/main/screenshots/10.%20All%20tweets-2.png)
 
-![Alt text]( )
+![Alt text](https://github.com/snehalmundhe10/serverless-capstone/blob/main/screenshots/5.%20Trends%20.png)
 
-![Alt text]( )
+![Alt text](https://github.com/snehalmundhe10/serverless-capstone/blob/main/screenshots/8.%20File%20Upload.png)
 
-![Alt text]( )
-
-![Alt text]( )
-
-![Alt text]( )
+![Alt text](https://github.com/snehalmundhe10/serverless-capstone/blob/main/screenshots/11.%20delete%20Tweets.png)
 
 ## Author
 Snehal Mundhe
