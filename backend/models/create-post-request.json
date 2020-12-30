@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "create-post",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 280
+      },
+      "postDate": {
+        "type": "string"
+      },
+      "userId": {
+        "type": "string"
+      },
+      "createdAt":{
+        "type": "string"
+      },
+      "posted":{
+        "type": "boolean"
+      },
+      "attachmentUrl":{
+        "type": "string"
+      }
+    },
+    "required": [
+      "name",
+      "postDate",
+      "posted",
+      "createdAt",
+      "attachmentUrl"
+    ],
+    "additionalProperties": false
+  }
+  
