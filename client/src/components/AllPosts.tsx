@@ -64,9 +64,9 @@ export class Posts extends React.PureComponent<PostsProps, PostsState> {
         Posts: [...this.state.Posts, newPost],
         newPostName: ''
       })
-      alert('Post creation success')
+      alert('Tweet creation success')
     } catch {
-      alert('Post creation failed')
+      alert('Tweet creation failed, please enter more tha two characters')
     }
   }
 
@@ -93,9 +93,9 @@ export class Posts extends React.PureComponent<PostsProps, PostsState> {
       this.setState({
         Posts: this.state.Posts.filter(Post => Post.postId != postId)
       })
-      alert('Post deletion success')
+      alert('Tweet deletion success')
     } catch {
-      alert('Post deletion failed')
+      alert('Tweet deletion failed')
     }
   }
 
@@ -113,7 +113,7 @@ export class Posts extends React.PureComponent<PostsProps, PostsState> {
         })
       })
     } catch {
-      alert('Post update failed')
+      alert('Tweet edit failed')
     }
   }
 
