@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "20929343-4524-4f33-9307-9e2f53c98fb2",
+		"name": "Twitter",
+		"description": "Twitter clone in Serverless Framework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{apiId}}.execute-api.us-east-2.amazonaws.com/dev/posts",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{authToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-2.amazonaws.com/dev/posts",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://{{apiId}}.execute-api.us-east-2.amazonaws.com/dev/posts",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{authToken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"createdAt\": 2019-07-27T20:01:45.424Z,\r\n  \"name\": \"My First Tweet\" ,\r\n  \"postDate\": \"2019-07-29T20:01:45.424Z\",\r\n  \"posted\": false,\r\n  \"attachmentUrl\": \"http://example.com/image.png\"\r\n}"
+				},
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-2.amazonaws.com/dev/posts",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://{{apiId}}.execute-api.us-east-2.amazonaws.com/dev/posts/{postId}",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-2.amazonaws.com/dev/posts/{postId}",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"posts",
+						"{postId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://{{apiId}}.execute-api.us-east-2.amazonaws.com/dev/posts/{postId}",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{authToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-2.amazonaws.com/dev/posts/{postId}",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"posts",
+						"{postId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://{{apiId}}.execute-api.us-east-2.amazonaws.com/dev/posts/{postId}/attachment",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{authToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{apiId}}.execute-api.us-east-2.amazonaws.com/dev/posts/{postId}/attachment",
+					"protocol": "https",
+					"host": [
+						"{{apiId}}",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"posts",
+						"{postId}",
+						"attachment"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apiId",
+			"value": ""
+		},
+		{
+			"key": "authToken",
+			"value": ""
+		}
+	]
+}
